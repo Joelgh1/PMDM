@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ut01.ex02.presentation.Ut01Ex02bActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_image"
+        android:layout_margin="@dimen/image_margin"
+        android:scaleType="centerCrop"
+        android:tint="@color/teal_200"
+        android:src="@drawable/ic_wings"/>
+
+    <TextView
+        android:paddingLeft="@dimen/title_padding"
+        android:textSize="@dimen/title_font_size"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_ex02b"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description_ex02b"/>
+
+</LinearLayout>
