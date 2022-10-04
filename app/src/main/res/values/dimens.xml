@@ -3,8 +3,10 @@
     <dimen name="size_image">256dp</dimen>
     <dimen name="date">72dp</dimen>
     <dimen name="title">102dp</dimen>
-    <dimen name="title_font_size">24dp</dimen>
+    <dimen name="title_font_size">24sp</dimen>
     <dimen name="content">72dp</dimen>
     <dimen name="image_margin">5dp</dimen>
     <dimen name="title_padding">20dp</dimen>
+    <dimen name="star_dimen">20dp</dimen>
+    <dimen name="heart_padding">225dp</dimen>
 </resources>
