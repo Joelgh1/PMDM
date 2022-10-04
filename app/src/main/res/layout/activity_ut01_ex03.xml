@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut01.ex03.presentation.Ut01Ex03Activity">
+
+    <TextView
+        android:id="@+id/text_1"
+        android:text="Texto 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/text_2"
+        android:text="Texto 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/text_1"/>
+    <TextView
+        android:id="@+id/text_3"
+        android:text="Texto 3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/text_2"/>
+    <TextView
+        android:id="@+id/text_3.1"
+        android:text="Texto 3.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/text_2"
+        android:layout_below="@+id/text_3"/>
+    <TextView
+        android:id="@+id/text_3.2"
+        android:text="Texto 3.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/text_2"
+        android:layout_below="@+id/text_3.1"/>
+    <TextView
+        android:id="@+id/text_4"
+        android:text="Texto 4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/text_3.1"/>
+    <TextView
+        android:id="@+id/text_4.1"
+        android:text="Texto 4.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/text_3.1"
+        android:layout_below="@id/text_4"/>
+    <TextView
+        android:id="@+id/text_4.2"
+        android:text="Texto 4.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/text_4.1"
+        android:layout_below="@id/text_4"/>
+    <TextView
+        android:id="@+id/text_5"
+        android:text="Texto 5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/text_4.2"/>
+
+</RelativeLayout>
