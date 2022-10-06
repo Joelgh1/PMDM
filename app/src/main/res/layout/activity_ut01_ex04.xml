@@ -26,7 +26,7 @@
             android:tint="@color/white"
             android:layout_margin="@dimen/image_margin"
             android:scaleType="centerCrop"
-            android:background="@drawable/round_border"
+            android:background="@color/weak_black"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/empty_heart"
