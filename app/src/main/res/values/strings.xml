@@ -14,4 +14,9 @@
     <string name="info">Recogida hoy: 00:14-23:59</string>
     <string name="text_title">Pack sorpresa</string>
     <string name="product_title">Nombre del establecimientoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</string>
+
+    <!--Form-->
+    <string name="form_label_name">Nombre:</string>
+    <string name="form_label_surname">Apellido:</string>
+    <string name="form_label_save">Guardar</string>
 </resources>
