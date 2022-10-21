@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@tools:sample/avatars"/>
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="@id/image"
+        app:layout_constraintStart_toStartOf="@id/image"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/white_50">
+
+        <TextView
+            tools:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/ic_wings"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        app:layout_constraintStart_toStartOf="@id/image"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        tools:text="Chubasquero de Sta. Teresa"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/nombre_bar"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="@id/title"
+        android:textSize="16sp"
+        tools:text="Bar Restaurante El Comienzo"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/nombre_bar"
+        app:layout_constraintStart_toStartOf="@id/nombre_bar"
+        android:id="@+id/label_points"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Total: 2ptos"/>
+
+    <TextView
+        android:id="@+id/label_avg"
+        app:layout_constraintTop_toBottomOf="@id/nombre_bar"
+        app:layout_constraintStart_toEndOf="@id/label_points"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Media: 4"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        app:layout_constraintTop_toBottomOf="@id/nombre_bar"
+        app:layout_constraintStart_toEndOf="@id/label_avg"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/empty_star"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        app:layout_constraintTop_toBottomOf="@id/nombre_bar"
+        app:layout_constraintEnd_toStartOf="@id/ic_favorite"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toLeftOf="@+id/ic_favorite"
+        app:srcCompat="@drawable/ic_share"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_favorite"
+        app:layout_constraintTop_toBottomOf="@id/nombre_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/empty_heart"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
